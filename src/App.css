@@ -1,0 +1,314 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  /* font-family: 'Anton', sans-serif; */
+
+  /* font-family: 'Caveat', cursive; */
+}
+/* ********header********** */
+
+.header_items{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.li_item{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  padding: 12px;
+}
+.li_item:hover{
+  color: rgb(180, 232, 237);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  
+}
+
+/* *********home************* */
+.causel{
+  width: 100%;
+  height: 80vh;
+}
+.causel img {
+  object-fit: cover;
+  height: 80vh;
+}
+.causel h3 {
+  /* font-size: 4rem; */
+  /* color: rgb(224, 224, 201); */
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: 'Anton', sans-serif; */
+  font-weight: 900;
+  font-family: 'Caveat', cursive;
+  text-shadow: 2px 4px 15px rgb(104, 83, 222);
+  font-family: 'Roboto Slab', serif;
+}
+.causel p {
+  
+  margin-bottom: 21px;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Caveat', cursive;
+}
+
+.patterns {
+  height: 100vh;
+}
+
+
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 1px;
+  stroke: #ffa5d8;
+  font-size: 23px;
+  font-weight: 500;
+  stroke-width: 1;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #edd815 15%,
+    #4cba97 23%,
+    #44107a 29%,
+    #39fc03 39%,
+    #b51d97 50%,
+    #ff1361 67%,
+    #18d6cd 75%,
+    #b342e3 86%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      /* font-size: 40px; */
+      padding: 12px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+/** About **/
+.about {
+  width: 100%;
+  /* height: 90vh; */
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.about img {
+  object-fit: cover;
+  width: 500px;
+  height: 50vh;
+  
+}
+.about h3 {
+  margin-top: 0px;
+  font-weight: 700;
+  color: rgb(225, 225, 84);
+  font-family: "Lato", sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+.about p {
+  color: black;
+  margin-top: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.about span {
+  color: rgb(138, 138, 53);
+}
+/** Vision **/
+.vision::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  background: url("/public/image/visionHD.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.vision{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;text-align: center;
+  margin-top:15px;
+}
+.vision h2 {
+  /* margin-top: 1px;
+  font-size: 5rem;
+  color: rgb(192, 214, 48);
+  font-weight: 1000;
+  text-transform: capitalize;
+  font-family: 'Roboto Slab', serif; */
+}
+.vision p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+  text-transform: capitalize;
+}
+.vision br {
+  width: 400px;
+  height: 22px;
+  background-color: rgb(46, 190, 56);
+}
+
+/*** Contacts **/
+
+.contacts{
+ 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+}
+
+.contacts img{
+  /* margin-left: 50px; */
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.contacts h2{
+  font-size: 4rem;
+  
+}
+/*** career ***********/
+
+.careerHeader{
+  background-image: linear-gradient(to right,pink, red , yellow);
+}
+
+/*** Gallery ******************/
+.gallery{
+  -webkit-column-count:3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width:33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding:0 12px ;
+}
+
+.gallery .pics{
+  -webkit-transform: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+
+}
+.gallery .pics:hover{
+  filter: opacity(0.8);
+}
+ @media screen and (max-width:991px) {
+  .gallery{
+    -webkit-column-count:2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+ }
+ @media screen and (max-width:450px) {
+  .gallery{
+    -webkit-column-count:1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-width:100%;
+  -moz-column-width: 100%;
+  column-width: 100%;
+ 
+  }
+ }
+
+
+/*** footer **/
+.footer{
+  /* margin: 22px; */
+  /* height: 30vh; */
+  height: 50vh;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+
+}
+.footer_para {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.breaker_line{
+  width: 100%;
+  border: 1px solid white;
+  color: bisque;
+}
+.footer_copy{
+  font-size: 12px;
+}
+.icons{
+  font-size: 20px;
+}
+.icons:hover{
+  color: blue;
+  cursor: pointer;
+}
+
